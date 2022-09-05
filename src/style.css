@@ -497,34 +497,11 @@ editor-squiggler {
     }
 
     .image__info {
-        position: absolute;
         top: 0;
         bottom: 5px;
         left: 0;
         right: 0;
-
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 17%, rgba(255, 255, 255, 0) 60%);
     }
-
-    .image__info>button {
-        background-color: #EB5757;
-        color: #FFFFFF;
-        width: 60px;
-        font-size: 12px;
-    }
-
-
-    .image__info>p {
-        bottom: 18px;
-        font-weight: normal;
-        font-size: 14px;
-    }
-
-    .image__info>button,
-    .image__info>p {
-        display: block;
-    }
-
 
 
 }
@@ -591,52 +568,6 @@ editor-squiggler {
         margin-bottom: 15px;
     }
 
-    .image__info {
-        position: absolute;
-        top: 0;
-        bottom: 5px;
-        left: 0;
-        right: 0;
-
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 17%, rgba(255, 255, 255, 0) 60%);
-    }
-
-    .image__info>button {
-        background-color: #EB5757;
-        color: #FFFFFF;
-        width: 60px;
-        font-size: 12px;
-    }
-
-
-    .image__info>p {
-        bottom: 18px;
-        font-weight: normal;
-        font-size: 14px;
-    }
-
-    .image__info>button,
-    .image__info>p {
-        display: block;
-    }
-
-    .modal__container {
-
-        /* Display childrens */
-        padding: 20px;
-    }
-
-
-    .modal__item {
-        width: 100%;
-    }
-
-    .modal__body h4>span {
-        background-color: transparent;
-        font-size: 12px;
-        padding: 2px;
-        color: #4F4F4F;
-    }
 
 
 
