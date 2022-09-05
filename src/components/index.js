@@ -13,7 +13,6 @@ import ModalItem from './ModalComponents/ModalItem'
 import ModalDeleteImage from './ModalComponents/ModalDeleteImage'
 import ModalUploadImage from './ModalComponents/ModalUploadImage'
 
-
 export {
     FormHeader,
     Header,

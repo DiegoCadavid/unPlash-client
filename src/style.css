@@ -87,7 +87,7 @@ editor-squiggler {
 .header__buttons>div {
     margin-right: 10px;
     padding: 0px 10px 0px 10px;
-    
+
     border: 1px solid #BDBDBD;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
     border-radius: 12px;
@@ -164,6 +164,7 @@ editor-squiggler {
 .image__column {
     /* outline: 1px solid red; */
     flex-grow: 1;
+    width: 100%;
 }
 
 .image__item {
@@ -298,7 +299,7 @@ editor-squiggler {
 
 }
 
-.modal__body h4 > span {
+.modal__body h4>span {
     background-color: #9effc5;
     padding: 2px;
 }
@@ -420,4 +421,223 @@ editor-squiggler {
     cursor: pointer;
     color: #9d9d9d;
     transition: color 0.3s 0s ease;
+}
+
+
+/* Footer */
+
+.footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 96vh;
+
+    background-color: rgba(0, 0, 0, 0.415);
+    backdrop-filter: blur(10px);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer p {
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.footer p a {
+    text-decoration: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* Reponsive */
+
+
+@media only screen and (max-width: 1000px) {
+
+    .header__buttons>div {
+        display: none;
+
+    }
+
+    /* Input header */
+    .header__form>form>input[type='text'] {
+        width: 100%;
+        height: 55px;
+        margin: 0;
+        /* margin-left: 24px; */
+        /* padding-left: 55px; */
+    }
+
+
+    .header__buttons>button {
+        width: 100%;
+        height: 55px;
+        padding: 10px;
+        margin-left: 5px;
+    }
+
+
+    .image__container {
+        margin-top: 74px;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .image__item img {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .image__item {
+        margin-bottom: 0px;
+    }
+
+    .image__info {
+        position: absolute;
+        top: 0;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 17%, rgba(255, 255, 255, 0) 60%);
+    }
+
+    .image__info>button {
+        background-color: #EB5757;
+        color: #FFFFFF;
+        width: 60px;
+        font-size: 12px;
+    }
+
+
+    .image__info>p {
+        bottom: 18px;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    .image__info>button,
+    .image__info>p {
+        display: block;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 500px) {
+    .main {
+        padding: 0px 6px;
+        overflow-x: hidden;
+    }
+
+    .header__container {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+
+    .header__container>img {
+        margin: 10px;
+        margin-bottom: 14px;
+        width: 150px;
+    }
+
+    .header__form {
+        width: 100%;
+        display: flex;
+        flex-grow: 2;
+        justify-content: space-between;
+        align-items: center;
+        height: 55px;
+    }
+
+    /* Input header */
+    .header__form>form>input[type='text'] {
+        width: 100%;
+        height: 55px;
+        margin: 0;
+        /* margin-left: 24px; */
+        /* padding-left: 55px; */
+    }
+
+    .header__buttons>button {
+        width: 100%;
+        height: 55px;
+        padding: 10px;
+        margin-left: 5px;
+    }
+
+
+    .header__buttons>div {
+        display: none;
+    }
+
+    .image__container {
+        margin-top: 74px;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .image__item img {
+        height: 100%;
+        margin-bottom: 0;
+    }
+
+    .image__item {
+        margin-bottom: 15px;
+    }
+
+    .image__info {
+        position: absolute;
+        top: 0;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.55) 17%, rgba(255, 255, 255, 0) 60%);
+    }
+
+    .image__info>button {
+        background-color: #EB5757;
+        color: #FFFFFF;
+        width: 60px;
+        font-size: 12px;
+    }
+
+
+    .image__info>p {
+        bottom: 18px;
+        font-weight: normal;
+        font-size: 14px;
+    }
+
+    .image__info>button,
+    .image__info>p {
+        display: block;
+    }
+
+    .modal__container {
+
+        /* Display childrens */
+        padding: 20px;
+    }
+
+
+    .modal__item {
+        width: 100%;
+    }
+
+    .modal__body h4>span {
+        background-color: transparent;
+        font-size: 12px;
+        padding: 2px;
+        color: #4F4F4F;
+    }
+
+
+
 }

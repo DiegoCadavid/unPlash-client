@@ -4,6 +4,7 @@ import { Header, ImageContainer, ModalContainer } from './components'
 import axios from 'axios';
 import { LinearProgress } from '@mui/material';
 import { useSnackbar } from 'notistack';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -66,11 +67,11 @@ const App = () => {
   }
 
   // Remover imagen
-  const handleDelete = ( id ) => {
-    setImages( imgs => {
+  const handleDelete = (id) => {
+    setImages(imgs => {
       // Obtenemos el nuevo array
-      const newImgs = imgs.filter( (e) => {
-          return e.id != id
+      const newImgs = imgs.filter((e) => {
+        return e.id != id
       })
 
       return newImgs
@@ -108,8 +109,10 @@ const App = () => {
       {loading && <LinearProgress color='inherit' />}
       {showModal.show && <ModalContainer Modal={showModal.modal} modalProps={showModal.modalProps}
         handleClose={handleClose} handleUpload={handleUpload} handleDelete={handleDelete} />}
+      <Footer />
 
     </div>
+
   )
 }
 
