@@ -2,10 +2,10 @@ import React from 'react'
 import ModalDeleteImage from './ModalDeleteImage'
 import ModalUploadImage from './ModalUploadImage'
 
-const ModalItem = ({ Modal, handleClose, modalProps }) => {
+const ModalItem = ({ Modal, handleClose, modalProps, handleUpload, handleDelete }) => {
     return (
         <div className='modal__item'>
-            <Modal handleClose={handleClose} {...modalProps} />
+            <Modal handleClose={handleClose} handleUpload={handleUpload} handleDelete={handleDelete} {...modalProps} />
         </div>
     )
 }
