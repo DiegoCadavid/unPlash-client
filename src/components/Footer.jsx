@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
-    <div className='footer'> <p> create by <a href='https://devchallenges.io/portfolio/DiegoCadavid'>Diego Cadavid</a> - devChallenges.io</p> </div>
-  )
-}
+    <div className="footer">
+      <p>Created by Natalia Cadavid </p>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

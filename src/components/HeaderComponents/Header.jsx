@@ -1,11 +1,13 @@
 import React from 'react'
-import logoSvg from '../../assets/my_unsplash_logo.svg'
 import FormHeader from './FormHeader'
 
 const Header = ({ openCreateModal, columnsCount, handleColumn, handleSearch }) => {
   return (
     <div className='header__container'> 
-        <img src={logoSvg} alt="logo" />
+    <div className='header__title'>
+        <h2>UnPlash</h2>
+        <p>Online Galery</p>
+    </div>
         <FormHeader handleSearch={handleSearch} openCreateModal={openCreateModal} columnsCount={columnsCount} handleColumn={handleColumn} />
     </div>
   )

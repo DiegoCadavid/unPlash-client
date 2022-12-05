@@ -453,11 +453,18 @@ editor-squiggler {
     cursor: pointer;
 }
 
+/* new title */
+.header__title h2 {
+    color: #3DB46D;
+}
+
+.header__title p {
+    color: rgb(80, 80, 80);
+}
 /* Reponsive */
 
 
 @media only screen and (max-width: 1000px) {
-
     .header__buttons>div {
         display: none;
 
@@ -530,6 +537,7 @@ editor-squiggler {
         justify-content: space-between;
         align-items: center;
         height: 55px;
+        margin: 10px 0px; 
     }
 
     /* Input header */
